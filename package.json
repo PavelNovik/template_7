@@ -4,6 +4,10 @@
   "description": "Template for portfolio",
   "main": "index.js",
   "scripts": {
+    "dev": "parcel src/index.html --open --port 1116",
+    "kit": "parcel src/uikit.html --open --port 1115",
+    "build:uikit": "rm -rf build/uikit && parcel build src/uikit.html --out-dir build/uikit",
+    "build": "rm -rf build/uikit && parcel build src/index.html --out-dir build/prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pawel Nowik (brn2befree@gmail.com)",
