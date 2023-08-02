@@ -1,0 +1,11 @@
+{
+  "name": "template_7",
+  "version": "1.0.0",
+  "description": "Template for portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pawel Nowik (brn2befree@gmail.com)",
+  "license": "ISC"
+}
