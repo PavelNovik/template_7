@@ -1,0 +1,16 @@
+.navigation {
+  display: flex;
+  &__menu {
+    &_list {
+      list-style: none;
+      display: flex;
+      li {
+        font-family: $mainFont;
+        color: $mainWhite;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        width: 10rem;
+      }
+    }
+  }
+}

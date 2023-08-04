@@ -4,3 +4,8 @@
   color: $mainWhite;
   font-weight: normal;
 }
+@mixin section($h: 100rem) {
+  width: 160rem;
+  height: $h;
+  display: flex;
+}

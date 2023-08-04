@@ -1,0 +1,5 @@
+.home {
+  @include section();
+  background: center / contain no-repeat url(../images/home-layer.webp),
+    center / contain no-repeat url(../images/sublayer-home.webp);
+}
