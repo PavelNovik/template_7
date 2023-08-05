@@ -1,0 +1,5 @@
+.work {
+  @include section(114.9rem);
+  background: center / contain no-repeat url(../images/sublayer-work.webp),
+    #81a256;
+}

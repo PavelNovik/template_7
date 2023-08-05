@@ -1,15 +1,47 @@
 .navigation {
+  z-index: 10;
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+  &-home {
+    position: absolute;
+  }
+
   &__menu {
     &_list {
       list-style: none;
       display: flex;
+      padding-left: 0;
+      margin-right: 23rem;
+
       li {
         font-family: $mainFont;
         color: $mainWhite;
         font-size: 1.8rem;
         text-transform: capitalize;
+        text-align: center;
         width: 10rem;
+        height: 7.2rem;
+        border-radius: 0 0 0.5rem 0.5rem;
+        padding-top: 4.1rem;
+        padding-bottom: 1.6rem;
+        margin-right: 1rem;
+      }
+      .home__list_item-active {
+        background-color: $mainBlue;
+      }
+      .services__list_item-active {
+        background-color: #df5c64;
+      }
+      .about__list_item-active {
+        background-color: #91778e;
+      }
+      .work__list_item-active {
+        background-color: #a1ca6c;
+      }
+      .contacts__list_item-active {
+        background-color: #82c8bd;
       }
     }
   }

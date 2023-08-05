@@ -1,0 +1,39 @@
+.swiper {
+  position: absolute;
+  width: 90%;
+  @include section();
+  //   height: 100%;
+  &-pagination {
+    margin-bottom: 10rem;
+    width: 20px;
+    height: 20px;
+
+    &-bullet {
+      width: 2rem;
+      height: 2rem;
+      background: $mainWhite;
+      opacity: 0.5;
+    }
+
+    &-bullet-active {
+      background: $mainBlue;
+      opacity: 1;
+    }
+  }
+  &-slide {
+    text-align: center;
+    font-size: 18px;
+    background: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-button {
+    &-next,
+    &-prev {
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 600;
+    }
+  }
+}

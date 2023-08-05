@@ -1,4 +1,5 @@
 .services {
   @include section();
-  background-color: #b24a50;
+  background: top / contain no-repeat url(../images/sublayer-services.webp),
+    #b24a50;
 }

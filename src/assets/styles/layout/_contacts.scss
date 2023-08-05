@@ -1,0 +1,5 @@
+.contacts {
+  @include section(86.8rem);
+  background: left top -15rem / contain no-repeat url(../images/sublayer-contacts.webp),
+    #75b4aa;
+}

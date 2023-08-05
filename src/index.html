@@ -6,30 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Template_7</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="./assets/styles/index.scss">
 </head>
 
 <body>
     <main class="container">
         <section class="home">
-            <div class="navigation">
+            <div class="navigation navigation__home">
                 <div class="logo">
                     <h2>YOU-PS.Ru - Best PSD</h2>
                 </div>
                 <div class="navigation__menu">
                     <ul class="navigation__menu_list">
-                        <li class="home__menu_list-item ">home</li>
-                        <li class="home__menu_list-item">services</li>
-                        <li class="home__menu_list-item">about</li>
-                        <li class="home__menu_list-item">work</li>
-                        <li class="home__menu_list-item">contacts</li>
+                        <li class="home__list_item home__list_item-active">home</li>
+                        <li class="home__list_item home__list_item">services</li>
+                        <li class="home__list_item home__list_item">about</li>
+                        <li class="home__list_item home__list_item">work</li>
+                        <li class="home__list_item home__list_item">contacts</li>
                     </ul>
                 </div>
             </div>
-            <div class="home__content">
-                <div class="home__content_list"></div>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"
+                        style="background: center / contain no-repeat url(assets/images/home-layer2.jpg)">
+                        <div class="slogan">
+                            <div class="slogan_article-small">
+                                <h2>GOOD IDEAS comes</h2>
+                            </div>
+                            <div class="slogan_article-big">
+                                <h2>FIRST!</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background: center / contain no-repeat url(assets/images/home-layer.webp)">
+                        <div class="slogan">
+                            <div class="slogan_article-small">
+                                <h2>GOOD IDEAS comes</h2>
+                            </div>
+                            <div class="slogan_article-big">
+                                <h2>FIRST!</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background: center / contain no-repeat url(assets/images/home-layer3.jpg)">
+                        <div class="slogan">
+                            <div class="slogan_article-small">
+                                <h2>GOOD IDEAS comes</h2>
+                            </div>
+                            <div class="slogan_article-big">
+                                <h2>FIRST!</h2>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
             </div>
         </section>
+
         <section class="services">
             <div class="navigation">
                 <div class="logo">
@@ -37,11 +88,11 @@
                 </div>
                 <div class="navigation__menu">
                     <ul class="navigation__menu_list">
-                        <li class="services__menu_list-item ">home</li>
-                        <li class="services__menu_list-item">services</li>
-                        <li class="services__menu_list-item">about</li>
-                        <li class="services__menu_list-item">work</li>
-                        <li class="services__menu_list-item">contacts</li>
+                        <li class="services__list_item services__list_item">home</li>
+                        <li class="services__list_item services__list_item-active">services</li>
+                        <li class="services__list_item services__list_item">about</li>
+                        <li class="services__list_item services__list_item">work</li>
+                        <li class="services__list_item services__list_item">contacts</li>
                     </ul>
                 </div>
             </div>
@@ -49,6 +100,72 @@
 
             </div>
         </section>
+
+        <section class="about">
+            <div class="navigation">
+                <div class="logo">
+                    <h2>acrostia</h2>
+                </div>
+                <div class="navigation__menu">
+                    <ul class="navigation__menu_list">
+                        <li class="about__list_item about__list_item">home</li>
+                        <li class="about__list_item about__list_item">services</li>
+                        <li class="about__list_item about__list_item-active">about</li>
+                        <li class="about__list_item about__list_item">work</li>
+                        <li class="about__list_item about__list_item">contacts</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about__content">
+
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="navigation">
+                <div class="logo">
+                    <h2>acrostia</h2>
+                </div>
+                <div class="navigation__menu">
+                    <ul class="navigation__menu_list">
+                        <li class="work__list_item work__list_item">home</li>
+                        <li class="work__list_item work__list_item">services</li>
+                        <li class="work__list_item work__list_item">about</li>
+                        <li class="work__list_item work__list_item-active">work</li>
+                        <li class="work__list_item work__list_item">contacts</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__content">
+
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="navigation">
+                <div class="logo">
+                    <h2>acrostia</h2>
+                </div>
+                <div class="navigation__menu">
+                    <ul class="navigation__menu_list">
+                        <li class="contacts__list_item contacts__list_item">home</li>
+                        <li class="contacts__list_item contacts__list_item">services</li>
+                        <li class="contacts__list_item contacts__list_item">about</li>
+                        <li class="contacts__list_item contacts__list_item">work</li>
+                        <li class="contacts__list_item contacts__list_item-active">contacts</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contacts__content">
+
+            </div>
+        </section>
+        <footer class="footer">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </footer>
 
     </main>
 

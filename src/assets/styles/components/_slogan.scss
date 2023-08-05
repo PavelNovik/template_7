@@ -1,0 +1,27 @@
+.slogan {
+  width: 90rem;
+  height: 17rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.4rem;
+  background-color: rgba($color: #ffffff, $alpha: 0.3);
+  & h2 {
+    font-family: $mainFont;
+    color: $mainBlue;
+    font-size: 6rem;
+    font-weight: 300;
+    text-align: right;
+    line-height: 0.9;
+  }
+
+  &_article-big {
+    margin-right: 6rem;
+    margin-left: 2.3rem;
+    & h2 {
+      font-size: 13.8rem;
+      font-weight: 900;
+      //   line-height: 1;
+      text-align: left;
+    }
+  }
+}

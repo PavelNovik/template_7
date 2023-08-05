@@ -1,4 +1,6 @@
 .logo {
+  width: 40%;
+  text-align: center;
   h2 {
     @extend %logo;
   }
