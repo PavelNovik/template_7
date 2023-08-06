@@ -4,12 +4,21 @@
   color: $mainWhite;
   font-weight: normal;
 }
+
+@mixin titleFont($color: #ffffff) {
+  font-family: $mainFont;
+  font-weight: 300;
+  font-size: 6rem;
+  color: $color;
+}
+
 @mixin section($h: 100rem) {
   width: 160rem;
   height: $h;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 
   @media ($desktop) {
     width: 160rem;

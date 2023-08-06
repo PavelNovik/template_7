@@ -4,12 +4,9 @@
   display: flex;
   align-items: center;
   border-radius: 0.4rem;
-  background-color: rgba($color: #ffffff, $alpha: 0.3);
+  background-color: rgba($color: #ffffff, $alpha: 0.7);
   & h2 {
-    font-family: $mainFont;
-    color: $mainBlue;
-    font-size: 6rem;
-    font-weight: 300;
+    @include titleFont($mainBlue);
     text-align: right;
     line-height: 0.9;
   }

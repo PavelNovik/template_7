@@ -2,4 +2,30 @@
   @include section();
   background: top / contain no-repeat url(../images/sublayer-services.webp),
     #b24a50;
+
+  .services__content {
+    .services__article {
+      width: 105.3rem;
+      text-align: center;
+      h2 {
+        @include titleFont();
+        text-transform: uppercase;
+      }
+      h3 {
+        font-family: $mainFont;
+        color: $mainWhite;
+        font-size: 2rem;
+        font-weight: normal;
+        text-transform: uppercase;
+        span {
+          color: #ec9da2;
+        }
+      }
+      p {
+        font-family: $mainFont;
+        font-size: 1.4rem;
+        color: #ffcccf;
+      }
+    }
+  }
 }
