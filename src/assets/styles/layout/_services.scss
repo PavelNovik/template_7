@@ -3,29 +3,31 @@
   background: top / contain no-repeat url(../images/sublayer-services.webp),
     #b24a50;
 
-  .services__content {
-    .services__article {
-      width: 105.3rem;
-      text-align: center;
-      h2 {
-        @include titleFont();
-        text-transform: uppercase;
+  .services__article {
+    width: 105.3rem;
+    text-align: center;
+    h2 {
+      @include titleFont();
+      text-transform: uppercase;
+      margin-top: 10rem;
+      margin-bottom: 4.6rem;
+    }
+    h3 {
+      font-family: $mainFont;
+      color: $mainWhite;
+      font-size: 2rem;
+      font-weight: normal;
+      text-transform: uppercase;
+      margin-bottom: 2.2rem;
+      span {
+        color: #ec9da2;
       }
-      h3 {
-        font-family: $mainFont;
-        color: $mainWhite;
-        font-size: 2rem;
-        font-weight: normal;
-        text-transform: uppercase;
-        span {
-          color: #ec9da2;
-        }
-      }
-      p {
-        font-family: $mainFont;
-        font-size: 1.4rem;
-        color: #ffcccf;
-      }
+    }
+    p {
+      font-family: $mainFont;
+      font-size: 1.4rem;
+      color: #ffcccf;
+      line-height: 1.71;
     }
   }
 }

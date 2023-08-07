@@ -1,4 +1,33 @@
 .footer {
   @include section(15rem);
   background-color: #68a097;
+  justify-content: center;
+  .socials {
+    width: 36rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+      .social {
+        width: 6rem;
+        height: 6.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #82c8bd;
+        &:hover {
+          background-color: $mainWhite;
+          i {
+            color: #82c8bd;
+          }
+        }
+        i {
+          color: $mainWhite;
+          font-size: 3rem;
+        }
+      }
+    }
+  }
 }

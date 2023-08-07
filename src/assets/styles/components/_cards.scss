@@ -1,0 +1,27 @@
+.services {
+  &__cards {
+    display: flex;
+    width: calc(26rem * 4 + 2rem * 3);
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12.4rem;
+    margin-top: 10rem;
+  }
+  &__card {
+    @include card();
+  }
+}
+
+.about {
+  &__cards {
+    display: flex;
+    width: calc(26rem * 4 + 2rem * 3);
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12.4rem;
+    margin-top: 10rem;
+  }
+  &__card {
+    @include card(38rem, 26rem, #4d3f4b, 0.5);
+  }
+}

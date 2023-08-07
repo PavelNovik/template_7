@@ -2,4 +2,22 @@
   @include section(98.6rem);
   background: center / contain no-repeat url(../images/sublayer-about.webp),
     #665464;
+
+  .about__article {
+    width: 105.3rem;
+    text-align: center;
+    h2 {
+      @include titleFont();
+      text-transform: uppercase;
+      margin-top: 10rem;
+      margin-bottom: 4.6rem;
+    }
+
+    p {
+      font-family: $mainFont;
+      font-size: 1.4rem;
+      color: #e6d1e3;
+      line-height: 1.71;
+    }
+  }
 }

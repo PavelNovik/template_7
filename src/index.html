@@ -15,23 +15,26 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
     <link rel="stylesheet" href="./assets/styles/index.scss">
 </head>
 
 <body>
     <main class="container">
-        <section class="home">
+        <section class="home" id="home">
             <div class="navigation navigation__home">
                 <div class="logo">
                     <h2>YOU-PS.Ru - Best PSD</h2>
                 </div>
                 <div class="navigation__menu">
                     <ul class="navigation__menu_list">
-                        <li class="home__list_item home__list_item-active">home</li>
-                        <li class="home__list_item home__list_item">services</li>
-                        <li class="home__list_item home__list_item">about</li>
-                        <li class="home__list_item home__list_item">work</li>
-                        <li class="home__list_item home__list_item">contacts</li>
+                        <li class="home__list_item home__list_item-active list_item">home</li>
+                        <li class="home__list_item home__list_item list_item">services</li>
+                        <li class="home__list_item home__list_item list_item">about</li>
+                        <li class="home__list_item home__list_item list_item">work</li>
+                        <li class="home__list_item home__list_item list_item">contacts</li>
                     </ul>
                 </div>
             </div>
@@ -40,34 +43,37 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"
                         style="background: center / contain no-repeat url(assets/images/home-layer4.jpg)">
-                        <div class="slogan">
+                        <div class="slogan" data-swiper-parallax="-500" data-swiper-parallax-duration="1000">
                             <div class="slogan_article-small">
-                                <h2>FEATURE WILL come</h2>
+                                <h2 data-swiper-parallax="-400" data-swiper-parallax-duration="1000">FEATURE WILL come
+                                </h2>
                             </div>
                             <div class="slogan_article-big">
-                                <h2>FAST!</h2>
+                                <h2 data-swiper-parallax="-1000" data-swiper-parallax-duration="1000">FAST!</h2>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide"
                         style="background: center / contain no-repeat url(assets/images/home-layer.webp)">
-                        <div class="slogan">
+                        <div class="slogan" data-swiper-parallax="-500" data-swiper-parallax-duration="1000">
                             <div class="slogan_article-small">
-                                <h2>GOOD IDEAS comes</h2>
+                                <h2 data-swiper-parallax="-400" data-swiper-parallax-duration="1000">GOOD IDEAS comes
+                                </h2>
                             </div>
                             <div class="slogan_article-big">
-                                <h2>FIRST!</h2>
+                                <h2 data-swiper-parallax="-1000" data-swiper-parallax-duration="1000">FIRST!</h2>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide"
                         style="background: center / contain no-repeat url(assets/images/home-layer3.jpg)">
-                        <div class="slogan">
+                        <div class="slogan" data-swiper-parallax="-500" data-swiper-parallax-duration="1000">
                             <div class="slogan_article-small">
-                                <h2>REAL NICE living</h2>
+                                <h2 data-swiper-parallax="-400" data-swiper-parallax-duration="1000">REAL NICE living
+                                </h2>
                             </div>
                             <div class="slogan_article-big">
-                                <h2>PLACE!</h2>
+                                <h2 data-swiper-parallax="-1000" data-swiper-parallax-duration="1000">PLACE!</h2>
                             </div>
                         </div>
                     </div>
@@ -81,99 +87,147 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <div class="navigation">
                 <div class="logo">
                     <h2>acrostia</h2>
                 </div>
                 <div class="navigation__menu">
                     <ul class="navigation__menu_list">
-                        <li class="services__list_item services__list_item">home</li>
-                        <li class="services__list_item services__list_item-active">services</li>
-                        <li class="services__list_item services__list_item">about</li>
-                        <li class="services__list_item services__list_item">work</li>
-                        <li class="services__list_item services__list_item">contacts</li>
+                        <li class="services__list_item services__list_item list_item">home</li>
+                        <li class="services__list_item services__list_item-active list_item">services</li>
+                        <li class="services__list_item services__list_item list_item">about</li>
+                        <li class="services__list_item services__list_item list_item">work</li>
+                        <li class="services__list_item services__list_item list_item">contacts</li>
                     </ul>
                 </div>
             </div>
-            <div class="services__content">
-                <div class="services__article">
-                    <h2>OUR SERVICES</h2>
-                    <h3>Cras commodo mattis justo nec <span>lobortis</span>. Nam ut tellus lobortis, ullamcorper massa
-                        sit amet</h3>
+
+            <div class="services__article">
+                <h2>OUR SERVICES</h2>
+                <h3>Cras commodo mattis justo nec <span>lobortis</span>. Nam ut tellus lobortis, ullamcorper massa
+                    sit amet</h3>
+                <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus
+                    aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo
+                    est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget
+                    laoreet erat posuere quis.</p>
+            </div>
+            <div class="services__cards">
+                <div class="services__card"></div>
+                <div class="services__card"></div>
+                <div class="services__card"></div>
+                <div class="services__card"></div>
+            </div>
+
+        </section>
+
+        <section class="about" id="about">
+            <div class="navigation">
+                <div class="logo">
+                    <h2>acrostia</h2>
+                </div>
+                <div class="navigation__menu">
+                    <ul class="navigation__menu_list">
+                        <li class="about__list_item about__list_item list_item">home</li>
+                        <li class="about__list_item about__list_item list_item">services</li>
+                        <li class="about__list_item about__list_item-active list_item">about</li>
+                        <li class="about__list_item about__list_item list_item">work</li>
+                        <li class="about__list_item about__list_item list_item">contacts</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about__article">
+                <h2>Who we are & what we do</h2>
+
+                <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus
+                    aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo
+                    est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget
+                    laoreet erat posuere quis.</p>
+            </div>
+            <div class="about__cards">
+                <div class="about__card"></div>
+                <div class="about__card"></div>
+                <div class="about__card"></div>
+                <div class="about__card"></div>
+            </div>
+        </section>
+
+        <section class="work" id="work">
+            <div class="navigation">
+                <div class="logo">
+                    <h2>acrostia</h2>
+                </div>
+                <div class="navigation__menu">
+                    <ul class="navigation__menu_list">
+                        <li class="work__list_item work__list_item list_item">home</li>
+                        <li class="work__list_item work__list_item list_item">services</li>
+                        <li class="work__list_item work__list_item list_item">about</li>
+                        <li class="work__list_item work__list_item-active list_item">work</li>
+                        <li class="work__list_item work__list_item list_item">contacts</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__content">
+                <div class="work__article">
+                    <h2>our work</h2>
+
                     <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus
                         aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo
                         est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget
                         laoreet erat posuere quis.</p>
                 </div>
-                <div class="services__lines"></div>
             </div>
         </section>
 
-        <section class="about">
+        <section class="contacts" id="contacts">
             <div class="navigation">
                 <div class="logo">
                     <h2>acrostia</h2>
                 </div>
                 <div class="navigation__menu">
                     <ul class="navigation__menu_list">
-                        <li class="about__list_item about__list_item">home</li>
-                        <li class="about__list_item about__list_item">services</li>
-                        <li class="about__list_item about__list_item-active">about</li>
-                        <li class="about__list_item about__list_item">work</li>
-                        <li class="about__list_item about__list_item">contacts</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="about__content">
-
-            </div>
-        </section>
-
-        <section class="work">
-            <div class="navigation">
-                <div class="logo">
-                    <h2>acrostia</h2>
-                </div>
-                <div class="navigation__menu">
-                    <ul class="navigation__menu_list">
-                        <li class="work__list_item work__list_item">home</li>
-                        <li class="work__list_item work__list_item">services</li>
-                        <li class="work__list_item work__list_item">about</li>
-                        <li class="work__list_item work__list_item-active">work</li>
-                        <li class="work__list_item work__list_item">contacts</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="work__content">
-
-            </div>
-        </section>
-
-        <section class="contacts">
-            <div class="navigation">
-                <div class="logo">
-                    <h2>acrostia</h2>
-                </div>
-                <div class="navigation__menu">
-                    <ul class="navigation__menu_list">
-                        <li class="contacts__list_item contacts__list_item">home</li>
-                        <li class="contacts__list_item contacts__list_item">services</li>
-                        <li class="contacts__list_item contacts__list_item">about</li>
-                        <li class="contacts__list_item contacts__list_item">work</li>
-                        <li class="contacts__list_item contacts__list_item-active">contacts</li>
+                        <li class="contacts__list_item contacts__list_item list_item">home</li>
+                        <li class="contacts__list_item contacts__list_item list_item">services</li>
+                        <li class="contacts__list_item contacts__list_item list_item">about</li>
+                        <li class="contacts__list_item contacts__list_item list_item">work</li>
+                        <li class="contacts__list_item contacts__list_item-active list_item">contacts</li>
                     </ul>
                 </div>
             </div>
             <div class="contacts__content">
+                <div class="contacts__article">
+                    <h2>CONTACT US</h2>
 
+                    <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus
+                        aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo
+                        est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget
+                        laoreet erat posuere quis.</p>
+                </div>
             </div>
         </section>
         <footer class="footer">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin-in"></i>
+            <div class="socials">
+                <a href="https://www.facebook.com/">
+                    <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </a>
+                <a href="https://twitter.com/home">
+                    <div class="social">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <div class="social">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/feed/">
+                    <div class="social">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </a>
+            </div>
         </footer>
 
     </main>
