@@ -3,14 +3,15 @@
   background: center / contain no-repeat url(../images/sublayer-about.webp),
     #665464;
 
-  .about__article {
+  &__article {
     width: 105.3rem;
     text-align: center;
+    margin-bottom: 5rem;
     h2 {
       @include titleFont();
       text-transform: uppercase;
       margin-top: 10rem;
-      margin-bottom: 4.6rem;
+      margin-bottom: 3rem;
     }
 
     p {
@@ -18,6 +19,34 @@
       font-size: 1.4rem;
       color: #e6d1e3;
       line-height: 1.71;
+    }
+  }
+  &__popper {
+    width: 27.6rem;
+    height: 5rem;
+    background-color: #a1ca6c;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    h2 {
+      font-family: $mainFont;
+      color: $mainWhite;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      margin: 1.5rem auto;
+    }
+    &::after {
+      content: '';
+      width: 2rem;
+      height: 2rem;
+      background-color: black;
+      background-color: inherit;
+      position: absolute;
+      transform: rotate(45deg);
+      top: 81%;
     }
   }
 }

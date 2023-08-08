@@ -24,10 +24,9 @@
     width: 160rem;
   }
 }
-@mixin card($h: 40rem, $w: 26rem, $bg: #c8535a, $op: 0.8) {
+@mixin card($h: 40rem, $w: 26rem, $bg: rgba(200, 83, 90, 0.8)) {
   height: $h;
   width: $w;
   background-color: $bg;
-  opacity: $op;
   border-radius: 0.5rem;
 }
