@@ -17,16 +17,30 @@
         justify-content: center;
         border-radius: 50%;
         background-color: #82c8bd;
-        &:hover {
-          background-color: $mainWhite;
-          i {
-            color: #82c8bd;
-          }
-        }
+
         i {
           color: $mainWhite;
           font-size: 3rem;
         }
+      }
+      .facebook:hover {
+        background-color: #4f689e;
+      }
+      .twitter:hover {
+        background-color: #74c7d5;
+      }
+      .instagram:hover {
+        background: linear-gradient(
+          45deg,
+          #feda75 0%,
+          #fa7e1e 25%,
+          #d62976 50%,
+          #962fbf 75%,
+          #4f5bd5 100%
+        );
+      }
+      .linkedin:hover {
+        background-color: #3e61af;
       }
     }
   }
