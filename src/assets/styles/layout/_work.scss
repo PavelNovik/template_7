@@ -14,10 +14,73 @@
     }
 
     p {
-      font-family: $mainFont;
       font-size: 1.4rem;
       color: $mainWhite;
       line-height: 1.71;
+    }
+  }
+
+  &__content {
+    width: 110rem;
+    hr {
+      border: 1px solid #94b963;
+    }
+    .portfolio {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 3rem auto;
+      h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $mainWhite;
+        text-transform: uppercase;
+        margin-left: 1.9rem;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+
+        li {
+          text-align: center;
+          line-height: 3.5rem;
+          width: 11rem;
+          height: 3.5rem;
+          font-size: 1.6rem;
+          font-weight: bold;
+          color: $mainWhite;
+          border-radius: 0.4rem;
+          margin-right: 2rem;
+          &:hover {
+            cursor: pointer;
+            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+              0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+              0 12.5px 10px rgba(0, 0, 0, 0.06),
+              0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+              0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+              0 100px 80px rgba(0, 0, 0, 0.12);
+          }
+        }
+        & .active {
+          background-color: #f5c149;
+        }
+      }
+    }
+    .galery {
+      display: flex;
+      flex-wrap: wrap;
+      &__card {
+        width: 26rem;
+        height: 25rem;
+        .photo {
+          width: 26rem;
+          height: 20rem;
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
     }
   }
 }

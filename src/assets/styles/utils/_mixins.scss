@@ -6,7 +6,6 @@
 }
 
 @mixin titleFont($color: #ffffff) {
-  font-family: $mainFont;
   font-weight: 300;
   font-size: 6rem;
   color: $color;

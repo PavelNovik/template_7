@@ -2,6 +2,10 @@
 @import './layout';
 @import './components';
 
+body {
+  font-family: $mainFont;
+}
+
 .container {
   max-width: 160rem;
   margin: auto;
