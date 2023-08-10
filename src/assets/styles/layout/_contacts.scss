@@ -9,8 +9,7 @@
     h2 {
       @include titleFont();
       text-transform: uppercase;
-      margin-top: 10rem;
-      margin-bottom: 4.6rem;
+      margin-bottom: 3.4rem;
     }
 
     p {
@@ -22,7 +21,8 @@
   &__content {
     display: flex;
     width: 110rem;
-    align-items: center;
+    height: 35.3rem;
+    align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 8rem;
 
@@ -33,7 +33,7 @@
 
       &_line {
         width: 20rem;
-        height: 27.2rem;
+        // height: 27.2rem;
         margin-right: 4rem;
         h3 {
           font-size: 3rem;
@@ -51,7 +51,7 @@
           font-size: 1.6rem;
           font-weight: normal;
           color: $mainWhite;
-          margin-bottom: 7.7rem;
+          margin-bottom: 6rem;
         }
         .contact_datas {
           display: flex;
@@ -76,13 +76,15 @@
         }
       }
       &_map {
+        margin-top: 6.3rem;
+        margin-right: 4.9rem;
         iframe {
+          border-radius: 0.4rem;
           border-style: none;
         }
       }
     }
     .feedback {
-      height: 27.2rem;
       h3 {
         font-size: 3rem;
         font-weight: 300;
@@ -90,6 +92,7 @@
         margin-bottom: 2.7rem;
       }
       form {
+        // margin-bottom: 9.7rem;
         #name {
           margin-right: 2rem;
         }
@@ -205,20 +208,28 @@
           }
         }
         button {
-          width: 260px;
-          height: 50px;
-          margin: 30px 387px 81px 193px;
-          padding: 13px 96px 16px;
-          border-radius: 4px;
+          width: 26rem;
+          height: 5rem;
+          margin: 4.3rem auto 4.3rem calc(50% - 13rem);
+          border-radius: 0.4rem;
           border: none;
           box-shadow: inset 0px -4px 0 0 rgba(178, 74, 80, 0.5);
           background-color: #df5c64;
-          font-size: 26px;
+          font-size: 2.6rem;
           font-weight: 900;
           color: #fff;
           text-transform: uppercase;
           text-align: center;
           line-height: 0.8;
+          &:hover {
+            cursor: pointer;
+            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+              0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+              0 12.5px 10px rgba(0, 0, 0, 0.06),
+              0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+              0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+              0 100px 80px rgba(0, 0, 0, 0.12);
+          }
         }
       }
     }
