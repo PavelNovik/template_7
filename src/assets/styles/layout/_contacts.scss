@@ -19,4 +19,208 @@
       line-height: 1.71;
     }
   }
+  &__content {
+    display: flex;
+    width: 110rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+
+    .adress {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &_line {
+        width: 20rem;
+        height: 27.2rem;
+        margin-right: 4rem;
+        h3 {
+          font-size: 3rem;
+          font-weight: 300;
+          color: $mainWhite;
+          margin-bottom: 2.7rem;
+        }
+        h4 {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #c0dfda;
+          margin-bottom: 1.9rem;
+        }
+        p {
+          font-size: 1.6rem;
+          font-weight: normal;
+          color: $mainWhite;
+          margin-bottom: 7.7rem;
+        }
+        .contact_datas {
+          display: flex;
+          justify-content: space-between;
+          span {
+            font-size: 1.6rem;
+            font-weight: normal;
+          }
+          .contact_name {
+            span {
+              color: #d0efea;
+            }
+          }
+          .contact_data {
+            span {
+              color: $mainWhite;
+              &:nth-of-type(3) {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      &_map {
+        iframe {
+          border-style: none;
+        }
+      }
+    }
+    .feedback {
+      height: 27.2rem;
+      h3 {
+        font-size: 3rem;
+        font-weight: 300;
+        color: $mainWhite;
+        margin-bottom: 2.7rem;
+      }
+      form {
+        #name {
+          margin-right: 2rem;
+        }
+        #name,
+        #email {
+          height: 4rem;
+          width: 26rem;
+          font-size: 1.6rem;
+          border-radius: 0.4rem;
+          background-color: #68a097;
+          border: none;
+          color: #b5b5b5;
+          padding-left: 1.9rem;
+          margin-bottom: 1.9rem;
+
+          &::-webkit-input-placeholder {
+            color: #82c8bd;
+          }
+
+          &::-moz-placeholder {
+            color: #82c8bd;
+          }
+
+          &:-ms-input-placeholder {
+            color: #82c8bd;
+          }
+
+          &::-ms-input-placeholder {
+            color: #82c8bd;
+          }
+
+          &::placeholder {
+            color: #82c8bd;
+          }
+          &:focus {
+            outline: none;
+            background-color: $mainWhite;
+            &::-webkit-input-placeholder {
+              color: $mainWhite;
+            }
+            &::-moz-placeholder {
+              color: $mainWhite;
+            }
+            &:-ms-input-placeholder {
+              color: $mainWhite;
+            }
+            &::-ms-input-placeholder {
+              color: $mainWhite;
+            }
+            &::placeholder {
+              color: $mainWhite;
+            }
+          }
+        }
+        textarea {
+          border-radius: 0.4rem;
+          width: 54rem;
+          height: 15.9rem;
+          background-color: #68a097;
+          border: none;
+          font-size: 1.6rem;
+          color: #b5b5b5;
+          padding: 1.5rem 1.9rem;
+          resize: none;
+
+          &::-webkit-input-placeholder {
+            color: #82c8bd;
+            font-family: $mainFont;
+          }
+
+          &::-moz-placeholder {
+            color: #82c8bd;
+            font-family: $mainFont;
+          }
+
+          &:-ms-input-placeholder {
+            color: #82c8bd;
+            font-family: $mainFont;
+          }
+
+          &::-ms-input-placeholder {
+            color: #82c8bd;
+            font-family: $mainFont;
+          }
+
+          &::placeholder {
+            color: #82c8bd;
+            font-family: $mainFont;
+          }
+          &:focus {
+            outline: none;
+            background-color: $mainWhite;
+
+            &::-webkit-input-placeholder {
+              color: $mainWhite;
+            }
+
+            &::-moz-placeholder {
+              color: $mainWhite;
+            }
+
+            &:-ms-input-placeholder {
+              color: $mainWhite;
+            }
+
+            &::-ms-input-placeholder {
+              color: $mainWhite;
+            }
+
+            &::placeholder {
+              color: $mainWhite;
+            }
+          }
+        }
+        button {
+          width: 260px;
+          height: 50px;
+          margin: 30px 387px 81px 193px;
+          padding: 13px 96px 16px;
+          border-radius: 4px;
+          border: none;
+          box-shadow: inset 0px -4px 0 0 rgba(178, 74, 80, 0.5);
+          background-color: #df5c64;
+          font-size: 26px;
+          font-weight: 900;
+          color: #fff;
+          text-transform: uppercase;
+          text-align: center;
+          line-height: 0.8;
+        }
+      }
+    }
+  }
 }

@@ -50,7 +50,16 @@ navigationBtns.forEach((btn) => {
   });
 });
 
-// Initialize custom view sections (opacity duration) with scrollReveal API
-sections.forEach((section) =>
-  ScrollReveal().reveal(`#${section.id}`, { duration: 700 })
+// Initialize portfolio buttons & add active class
+const portfolioBtns = document.querySelectorAll('.portfolio_button');
+portfolioBtns.forEach((btn) =>
+  btn.addEventListener('click', function (event) {
+    portfolioBtns.forEach((btn) => btn.classList.remove('active'));
+    btn.classList.toggle('active');
+  })
 );
+
+// Initialize custom view sections (opacity duration) with scrollReveal API
+// sections.forEach((section) =>
+//   ScrollReveal().reveal(`#${section.id}`, { duration: 700 })
+// );

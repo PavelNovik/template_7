@@ -356,10 +356,10 @@
                 <div class="portfolio">
                     <h3>PORTFOLIO</h3>
                     <ul>
-                        <li>All</li>
-                        <li class="active">Photography</li>
-                        <li>Logo design</li>
-                        <li>Web design</li>
+                        <li class="portfolio_button">All</li>
+                        <li class="portfolio_button active">Photography</li>
+                        <li class="portfolio_button">Logo design</li>
+                        <li class="portfolio_button">Web design</li>
                     </ul>
                 </div>
                 <hr>
@@ -485,20 +485,43 @@
                         <h3>Address</h3>
                         <h4>Acrostia</h4>
                         <p>Sevenoaks Rd <br> Sevenoaks TN14 7HR, UK</p>
-                        <p>phone: +44 555 555 555 <br> Fax:+44 556 555 555 <br> E-mail:info@acrostia.com <br>
-                            Skype:Ac0stia</p>
+                        <div class="contact_datas">
+                            <div class="contact_name">
+                                <span>Phone:</span>
+                                <br>
+                                <span>Fax:</span>
+                                <br>
+                                <span>E-mail:</span>
+                                <br>
+                                <span>Skype:</span>
+                            </div>
+                            <div class="contact_data">
+                                <span>+44 555 555 555</span>
+                                <br>
+                                <span>+44 556 555 555</span>
+                                <br>
+                                <span>info@acrostia.com</span>
+                                <br>
+                                <span>Ac0stia</span>
+                            </div>
+                        </div>
+
+
                     </div>
                     <div class="adress_map"><iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19220.57941048519!2d27.56352297116593!3d53.036413039765584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sby!4v1691616142425!5m2!1sen!2sby"
-                            width="260" height="200" style="border:1;" allowfullscreen="" loading="lazy"
+                            width="260" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
                 <div class="feedback">
+                    <h3>Ask a question</h3>
                     <form>
-                        <input type="text" name="name" id="name">
-                        <input type="email" name="email" id="email">
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="email" name="email" id="email" placeholder="E-mail">
                         <br>
-                        <textarea name="question" id="question" cols="46" rows="8"></textarea>
+                        <textarea name="question" id="question" cols="46" rows="8"
+                            placeholder="Your question"></textarea>
+                        <br>
                         <button type="submit">send</button>
                     </form>
                 </div>
