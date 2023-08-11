@@ -10,10 +10,10 @@ const swiper = new Swiper('.swiper', {
   keyboard: {
     enabled: true,
   },
-  autoplay: {
-    delay: 4500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 4500,
+  //   disableOnInteraction: false,
+  // },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

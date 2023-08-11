@@ -20,7 +20,7 @@
   align-items: center;
 
   @media ($desktop) {
-    width: 160rem;
+    max-width: 160rem;
   }
 }
 @mixin card($h: 40rem, $w: 26rem, $bg: rgba(200, 83, 90, 0.8)) {
