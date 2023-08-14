@@ -4,7 +4,7 @@
 //   const mouseY = e.clientY;
 //   const mouseX = e.clientX;
 
-//   cursorRounded.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+//   //   cursorRounded.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
 
 //   cursorPointed.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
 // };

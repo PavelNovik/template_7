@@ -6,10 +6,10 @@ body {
   font-family: $mainFont;
   // cursor: none;
   cursor: url(../images/cursor.png), default;
+  // position: relative;
 }
 
 .container {
-  // position: relative;
   display: flex;
   flex-direction: column;
   max-width: 160rem;
